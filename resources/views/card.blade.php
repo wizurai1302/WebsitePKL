@@ -56,16 +56,22 @@
                                   <input type="text" class="form-control" name="category_id" id="category_id" placeholder="">
                                 </div>
                               </div>
-                              <div class="form-group row">
-                                <label for="jurusan" class="col-sm-2 col-form-label">Jurusan</label>
-                                <div class="col-sm-10">
-                                  <input type="text" class="form-control" name="jurusan" id="jurusan" placeholder="">
-                                </div>
+                              <div class="form-group row mt-4">
+                                <label class="col-sm-2 col-form-label">Jurusan</label>
+                                <div class="col-md-6">
+                                <select name="jurusan" class="form-control">
+                                  <option value="">-Select-</option>
+                                  <option value="Rekayasa_Perangkat_Lunak">Rekayasa Perangkat Lunak</option>
+                                  <option value="Multi_Media">Multi Media</option>
+                                  <option value="Teknik_Komputer_Jaringan">Teknik Komputer Jaringan</option>
+                                  <option value="BroadCasting">BroadCasting</option>
+                                </select>
+                              </div>
                               </div>
                               <div class="form-group row">
                                 <label for="alamat" class="col-sm-2 col-form-label">Alamat</label>
                                 <div class="col-sm-10">
-                                  <input type="text" class="form-control" name="jurusan" id="jurusan" placeholder="">
+                                  <input type="text" class="form-control" name="alamat" id="alamat" placeholder="">
                                 </div>
                               </div>
 

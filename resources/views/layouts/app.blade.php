@@ -21,11 +21,12 @@
 </head>
 <body>
    <div id="app">
-    <nav class="navbar navbar-expand-sm navbar-dark shadow-sm" style="background-color:#5d5dff; height:12vh">
+    <nav class="navbar navbar-expand-sm navbar-dark shadow-sm" style="background-color: #5d5dff; height: 12vh; font-size: large; color: white;">
         <div class="container">
-            <a class="navbar-brand" href="{{ url('/') }}">
-                Website PKL 
+            <a class="navbar-brand" href="{{ url('/') }}" style="font-size: large;">
+              Website PKL
             </a>
+          
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -44,34 +45,35 @@
                         <a href="{{route('tambahdata')}}" class="nav-link">Input Data Siswa</a>
                     </li>
                     <div class="btn-group" style="margin-left: 10px;">
-                        <button class="btn btn-auto btn-sm" type="button">
+                        <button class="btn btn-auto btn-sm" type="button" style="font-size: medium; color: white;">
                           Lokasi
                         </button>
                         <button type="button" class="btn btn-sm btn-auto dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
                           <span class="visually-hidden">Toggle Dropdown</span>
                         </button>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="{{route('prrr.jogja')}}">Yogyakarta</a></li>
-                            <li><a class="dropdown-item" href="{{route('batam')}}">Batam</a></li>
-                            <li><a class="dropdown-item" href="{{route('pekanbaru')}}">Pekan Baru</a></li>
-                            <li><a class="dropdown-item" href="{{route('padang')}}">Padang</a></li>
-                            <li><a class="dropdown-item" href="{{route('jabodetabek')}}">Jabodetabek</a></li>
+                          <li><a class="dropdown-item" href="{{route('prrr.jogja')}}" style="color: black;">Yogyakarta</a></li>
+                          <li><a class="dropdown-item" href="{{route('batam')}}" style="color: black;">Batam</a></li>
+                          <li><a class="dropdown-item" href="{{route('pekanbaru')}}" style="color: black;">Pekan Baru</a></li>
+                          <li><a class="dropdown-item" href="{{route('padang')}}" style="color: black;">Padang</a></li>
+                          <li><a class="dropdown-item" href="{{route('jabodetabek')}}" style="color: black;">Jabodetabek</a></li>
                         </ul>
                       </div>
-                    <div class="btn-group" style="margin-left: 10px;">
-                        <button class="btn btn-auto btn-sm" type="button">
+                      <div class="btn-group" style="margin-left: 10px;">
+                        <button class="btn btn-auto btn-sm" type="button" style="font-size: medium; color: white;">
                           Jurusan
                         </button>
                         <button type="button" class="btn btn-sm btn-auto dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
                           <span class="visually-hidden">Toggle Dropdown</span>
                         </button>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="{{route('rpl')}}">Rekayasa Perangkat Lunak</a></li>
-                            <li><a class="dropdown-item" href="{{route('mm')}}">Multimedia</a></li>
-                            <li><a class="dropdown-item" href="{{route('tkj')}}">Teknik Komputer Jaringan</a></li>
-                            <li><a class="dropdown-item" href="{{route('bc')}}">BroadCasting</a></li>
+                          <li><a class="dropdown-item" href="{{route('rpl')}}" style="color: black;">Rekayasa Perangkat Lunak</a></li>
+                          <li><a class="dropdown-item" href="{{route('mm')}}" style="color: black;">Multimedia</a></li>
+                          <li><a class="dropdown-item" href="{{route('tkj')}}" style="color: black;">Teknik Komputer Jaringan</a></li>
+                          <li><a class="dropdown-item" href="{{route('bc')}}" style="color: black;">BroadCasting</a></li>
                         </ul>
                       </div>
+                      
                 </ul>
                 <ul class="navbar-nav ms-auto">
                     @guest

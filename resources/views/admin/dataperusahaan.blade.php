@@ -11,6 +11,7 @@
             <th>Keunggulan</th>
             <th>About</th>
             <th>Foto</th>
+            <th>Jurusan</th>
             <th>Alamat</th>
             <th>Aksi</th>
         </tr>
@@ -23,6 +24,7 @@
             <td>{{$user->keunggulan}}</td>
             
             <td>{{$user->photo}}</td>
+            <td>{{$user->jurusan}}</td>
             <td>{{$user->alamat}}</td>
             <!-- Other table columns -->
             <td>

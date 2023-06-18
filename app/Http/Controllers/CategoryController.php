@@ -56,7 +56,7 @@ class CategoryController extends Controller
     }
     public function tkj()
     {
-        $perusahaan = Perusahaan::whereIn('jurusan', ['Teknoloogi Komputer Jaringan'])->get();
+        $perusahaan = Perusahaan::whereIn('jurusan', ['Teknik Komputer Jaringan'])->get();
         return view('layouts.jurusan.TKJ', compact('perusahaan'));
         
     }
