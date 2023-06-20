@@ -1,6 +1,5 @@
-@extends('layouts.app')
+@include('layouts.mainNavbar')
 
-@section('content')
 
 
 
@@ -50,5 +49,4 @@
     </div>
 </div>
 @include('layouts.footer')
-@endsection
 
