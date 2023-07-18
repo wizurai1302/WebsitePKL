@@ -1,1 +1,14 @@
-
+ul {
+    display: flex;
+    gap: 2.5rem;
+}
+li {
+    display: block;
+    transition: 0.5s;
+}
+ul:hover li {
+    filter: blur(5px);
+}
+ul li:hover {
+    filter: 0px;
+}

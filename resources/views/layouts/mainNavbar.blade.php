@@ -21,7 +21,7 @@
 </head>
 <body>
 <div id="app">
-    <nav class="navbar navbar-expand-lg navbar-dark p-3" style="background-color: #145DA0">
+    <nav class="navbar navbar-expand-lg navbar-dark p-3" style="background-color: #145DA0; height:;">
         <div class="container">
             <a class="navbar-brand" href="{{ route('home') }}">Website PKL</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -104,6 +104,9 @@
             </div>
         </div>
     </nav>
+    <main class="py-4">
+        @yield('content')
+    </main>
 </div>
 </body>
 </html>
