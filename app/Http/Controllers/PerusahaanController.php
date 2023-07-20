@@ -15,8 +15,7 @@ class PerusahaanController extends Controller
     public function index()
     {
         $perusahaan = perusahaan::all();
-        return response()->json($perusahaan);
-        // return view ('home', compact('perusahaan'));
+        return view ('home', compact('perusahaan'));
     }
 
     public function card()

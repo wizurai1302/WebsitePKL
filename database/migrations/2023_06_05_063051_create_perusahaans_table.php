@@ -15,13 +15,20 @@ class CreatePerusahaansTable extends Migration
     {
         Schema::create('perusahaans', function (Blueprint $table) {
             $table->id();
+            $table->biginteger('siswa_id')->unsigned();
             $table->string('nama');
             $table->text('about');
+            $table->biginteger('category_id')->unsigned();
             $table->text('keunggulan');
-            $table->string('jurusan');
+            $table->enum('jurusan', ['RPL', 'MM', 'TKJ', 'BC', 'DKV']);
             $table->string('alamat');
             $table->string('photo');
             $table->timestamps();
+        });
+
+        Schema::table('perusahaans', function (Blueprint $table) {
+         
+            $table->foreign('siswa_id')->references('id')->on('siswas')->onupdate('cascade')->ondelete('cascade');
         });
     }
 

@@ -18,8 +18,8 @@ class CreateSiswasTable extends Migration
             $table->timestamps();
             $table->String('Nisn');
             $table->String('Nama');
-            $table->String('JK');
-            $table->String('Kelas');
+            $table->enum('JK',['Laki-Laki','Perempuan']);
+            $table->enum('Kelas',['Rekayasa_Perangkat_Lunak','Multi_Media','Teknik_Komputer_Jaringan','BroadCasting']);
             $table->String('Kota');
             $table->String('Keahlian');
         });

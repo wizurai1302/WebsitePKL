@@ -25,7 +25,7 @@
                             </div>
                         @endif
                         
-                        <form action="{{route('store')}}" method="POST">
+                        <form action="{{ route('store') }}" method="POST">
                           @csrf
                             <div class="form-group row">
                               <label for="Nisn" class="col-sm-2 col-form-label">Nisn</label>
@@ -93,5 +93,7 @@
             </div>
         </div>
     </div>
-    @endsection
-    
+</body>
+</html>
+
+@endsection
